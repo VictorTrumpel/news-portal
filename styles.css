@@ -1,0 +1,782 @@
+@font-face {
+	font-family: 'ArialReg';
+	src: url("fonts/ofont.ru_Arial.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: ArialReg;
+}
+
+html, body {
+	min-width: 1000px;
+	font-family: Arial , sans-serif;
+}
+
+.black-bar {
+	background-color: #00122f;
+	color: white;
+	height:55px;
+}
+
+.black-bar .fixed-container {
+	padding-top: 20px;
+
+}
+
+.black-bar time {
+	display: inline-block;
+	float: right;
+}
+.black-bar h1 {
+	display: inline-block;
+	font-size: 15.5px;
+	font-weight: lighter;
+	width: 340px;
+}
+
+.black-bar a {
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px white solid;
+}
+
+.black-bar a:visited {
+	color: white;
+}
+
+
+/* Стилизация header*/
+.fixed-container {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	overflow-y: hidden;
+}
+
+/*Левый блок*/
+header .fixed-container .left {
+	float: left;
+	font-size: 0;
+	margin-top: 40px;
+}
+
+header .left span, a, time {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+/*Стилизция поиcка города*/
+.town span {
+	color: #448ccb;
+	border-bottom: 2px dashed;
+	font-size: 15px;
+}
+
+.town {
+	padding-right: 20px;
+	background-image: url(img/заготовка1.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	margin-left: 61px;
+}
+
+/**/
+header .logo {
+	display: inline-block;
+}
+
+header .calendar {
+	margin-left: 50px;
+	color: #b2b2bb;
+	font-size: 15px;
+}
+
+header .time {
+	margin-left: 33px;
+	padding-left: 25px;
+	background: url(img/clock.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	color: #b2b2bb;
+	font-size: 15px;
+}
+
+header .temperature {
+	margin-left: 32px;
+	background-color: red;
+	padding-left: 40px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	background: url(img/clouds.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	color: #b2b2bb;
+	font-size: 15px;
+}
+
+/*Правая колонка*/
+header .fixed-container .right {
+	float: right;
+	margin-top: 38px;
+}
+
+/*Строка поиска*/
+.search {
+	position: relative;
+	width: 320px;
+	height: 45px;
+}
+
+.search input {
+	width: 100%;
+	height: 100%;
+	padding-left: 6.5%;
+	border-radius: 25px;
+	border: none;
+	background: #f3f3f3;
+	outline: none;
+}
+
+.search_button {
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	right: 12.2px;
+	width: 30px;
+	height: 30px;
+	background-image: url('https://banner2.kisspng.com/20180324/ukw/kisspng-magnifying-glass-computer-icons-magnifier-loupe-5ab62e7a2951b1.3568255815218888901693.jpg');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+/*Стилизация меню*/
+nav {
+	margin-top: 38px;
+	padding-bottom: 30px;
+}
+
+/*Меню*/
+nav ul {
+	list-style-type: none;
+	font-size: 0;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding-right: 44.5px;
+	position: relative;
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;
+	letter-spacing: 0px;
+}
+
+nav ul li a::after {
+	content: '/';
+	position: absolute;
+	color: #bfbfbf;
+	display: block;
+	right: 19px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav ul li:last-child a::after {
+	display: none;
+}
+/**/
+
+ul {
+	list-style-type: none;
+}
+/*Верстка центральной части сайта*/
+.central-container .column-left ul h3 {
+	font-weight: 500;
+	font-size: 13.5px;
+	letter-spacing: 0.6px;
+}
+
+.central-container .column-left h2 {
+	font-size: 20px;
+	padding-left: 19px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 28px;
+	border-bottom: 1px solid #e5e5e5;
+	letter-spacing: 0.2px;
+}
+
+.column-left ul .left-news {
+	font-size: 10px;
+	padding-left: 18px;
+	
+	line-height: 20px;
+}
+
+.column-left ul li {
+	margin-bottom: 22px;
+}
+
+.column-left ul li div {
+	margin-top: 8px;
+}
+
+.column-left ul li div a, time, span {
+	display: inline-block;
+	font-size: 12px;
+}
+
+.column-left ul li div time {
+	margin-left: 11px;
+	padding-left: 14px;
+	background-image: url(img/icon-time.png);
+	background-repeat: no-repeat;
+	background-position: left center; 
+	color: #333333;
+}
+
+.column-left ul li div span {
+	margin-left: 16px;
+	padding-left: 14px;
+	background-image: url(img/icon-comments.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #333333;
+}
+
+.column-left ul a {
+	text-decoration: none;
+	width: 88.69px;
+	color: #b2b2bb;
+	text-align: left;
+}
+
+.column-left .button {
+	margin-top: 37px;
+	padding-bottom: 25px;
+}
+
+.button a {
+	font-size: 13px;
+	text-decoration:none;
+	display: block;
+	height: 45px;
+	width: 178px;
+	border: 1px solid #448ccb;
+	border-radius: 32px;
+	background: white;
+	color: #448ccb;
+	padding-top: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 0.3px;
+}
+
+.button a:hover {
+	background-color:#448ccb;
+	color: white;
+}
+
+.column-left {
+	background-color: #FFFFFF;
+	width: 250px;
+	float: left;
+}
+
+/*центральная колонна*/
+.column-center {
+	width: 462px;
+	margin-left: 20px;
+	float: left;
+}
+
+.main-news {
+	height: 322px;
+	width: 462px;
+	margin: 0 auto;
+	color: white;
+	position: relative;
+}
+
+.main-news img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.main-news .text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	padding: 20px;
+}
+
+.main-news .category {
+	display: inline-block;
+	margin-top: 94px;
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+}
+
+.main-news .title {
+	margin-top: 20px;
+	font-size: 25px;
+	line-height: 35px;
+	letter-spacing: 1px;
+}
+
+.main-news .props {
+	margin-top: 17px;
+	
+}
+
+.main-news .date {
+	display: inline-block;
+	font-size: 11.7px;
+}
+
+.main-news .time {
+	display: inline-block;
+	margin-left: 8px;
+	font-size: 11.7px;
+	color: white;
+	margin-left: 14px;
+	padding-left: 14px;
+	background: url(img/mini-clock.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.center {
+	padding-top: 20px;
+	width: 460px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.center .article-item {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.center .article-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.center .article-item img {
+  width: 100%;
+  height: 142px;
+  object-fit: cover;
+}
+
+.center h3 {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.center .news-item__props {
+  font-family: Arial;
+  margin-top: 10px;
+}
+
+.center .category {
+	display: inline-block;
+	color: #a9a9b3;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 0;
+}
+
+.center .time {
+	display: inline-block;
+	margin-left: 9px;
+	font-size: 12px;
+	padding-left: 14px;
+	background-image: url(img/icon-time.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #323232;
+}
+
+.center .comments {
+	display: inline-block;
+	margin-left: 15px;
+	font-size: 12px;
+	padding-left: 14px;
+	background-image: url(img/icon-comments.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #323232;
+}
+
+/*Правая колонка центральной части*/
+.column-center .right {
+	float: right;
+	margin-top: 19px;
+	width: 221px;
+}
+
+.column-center .right ul h6 {
+	font-size: 13.5px;
+	margin-top: 3px;
+	line-height: 20px;
+}
+
+.column-center .right ul li div {
+	margin-top: 10px;
+}
+
+.column-center .right ul li div a, time, span {
+	display: inline-block;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+.column-center .right ul li div time {
+	padding-left: 14px;
+	background-image: url(img/icon-time.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-left: 
+}
+
+.column-center .right ul li div span {
+	margin-left: 20px;
+	padding-left: 14px;
+	background-image: url(img/icon-comments.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+
+}
+
+.column-center .right ul a {
+	text-decoration: none;
+	width: 70px;
+}
+
+.column-center .right ul li:nth-child(2) {
+	margin-top: 17px;
+}
+
+.central-container {
+	padding-top: 20px;
+	background-color: #f9f9f9;
+	background-image: url('img/central-bg-top.png');
+	background-repeat: repeat-x;
+}
+
+.central-container .fixed-container {
+	overflow-y: hidden;
+}
+
+.column-right {
+	width: 250px;
+	float: right;
+}
+
+.column-right img {
+	margin-bottom: 19px;
+}
+
+.column-right img:nth-child(2) {
+	margin-bottom: 0;
+}
+
+
+/*Спец. новости*/
+.special-news {
+	padding-bottom: 55px;
+}
+
+.special-news img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.special-news .fixed-container .left {
+	position: relative;
+	float: left;
+	width: 588px;
+	color: white;
+	margin-top: 15px;
+}
+
+.special-news .text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	padding: 20px;
+}
+
+.special-news .text .category {
+	display: inline-block;
+	margin-top: 80px;
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 0;
+}
+
+.special-news .title {
+	margin-top: 20px;
+	font-size: 25px;
+	line-height: 37px;
+	letter-spacing: 1.2px;
+}
+
+.special-news .props {
+	margin-top: 5px;
+	margin-left: 2px;
+}
+
+.special-news .date {
+	display: inline-block;
+	font-size: 11.7px;
+}
+
+.special-news .time {
+	display: inline-block;
+	margin-left: 8px;
+	font-size: 11.7px;
+	color: white;
+	margin-left: 14px;
+	padding-left: 14px;
+	background: url(img/mini-clock.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.special-news .fixed-container .left .add-text {
+	margin-top: 22px;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+}
+
+.special-news .fixed-container .left .add-text h4 {
+	font-weight: 100;
+}
+
+.special-news .fixed-container .right {
+	margin-top: 15px;
+	float: right;
+	width: 412px;
+	height: 393px;
+	background-color: white;
+}
+
+.special-news .right h2 {
+	font-size: 19px;
+	padding-left: 19px;
+	padding-top: 25px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #ebebeb;
+	width: 100%;
+	letter-spacing: 1px;
+}
+
+.special-news .right ul li {
+	margin-top: 23px;
+	margin-left: 20px;
+}
+
+.special-news .right ul li:nth-child(2) {
+	margin-top: 31px;
+	margin-left: 20px;
+}
+
+.special-news .right ul li .sub-headline {
+	line-height: 22px;
+	letter-spacing: 0.4px;
+}
+
+.special-news .right ul .category {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	vertical-align: middle;
+	color: #b2b2bb;
+}
+
+.special-news .right ul .props {
+	margin-top: 10px;
+}
+
+.special-news .right ul li div time {
+	padding-left: 14px;
+	background-image: url(img/icon-time.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-left: 4px;
+}
+
+.special-news .right ul li div span {
+	margin-left: 13px;
+	padding-left: 14px;
+	background-image: url(img/icon-comments.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+footer .left {
+	float: left;
+}
+
+footer .right {
+	float: right;
+}
+
+footer {
+	background: #00122f;
+	color: white;
+	padding-bottom: 30px;
+}
+
+footer ul {
+	display: inline-block;
+	vertical-align: top;
+}
+
+footer ul li {
+	margin-bottom: 14px;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+footer .category {
+	margin-top: 52px;
+}
+
+footer .contacts {
+	margin-left: 168px;
+	margin-top: 60px;
+}
+
+footer .right .icons {
+	margin-top: 55px;
+}
+
+footer .right .icons-href {
+	margin-left: 17px;
+}
+
+footer .right .icons li{
+	display: inline-block;
+}
+
+footer .contacts-address {
+	margin-top: 26px;
+}
+
+footer .contacts-address .contacts-href {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	margin-bottom: 24px;
+	background-position: 22px;
+	background-repeat: no-repeat;
+}
+
+footer .contacts-href:nth-child(1) {
+	background-image: url(img/phone-icon.png);
+	
+}
+
+footer .contacts-href:nth-child(2) {
+	background-image: url(img/letter-icon.png);
+	text-align: left;
+	padding-left: 48px;
+}
+
+footer span {
+	display: block;
+	margin-top: 40px;
+	font-size: 17px;
+	margin-left: 18px;
+	padding-left: 36px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+footer .category {
+	columns: 2;
+	width: 264px;
+}
+
+.loft {
+	background: #00122f;
+	height: 50px;
+	text-align: center;
+	color: white;
+	border-top: 1px solid #26354e;
+}
+
+.loft small {
+	display: inline-block;
+	font-size: 13.4px;
+	margin-top: 18px;
+	color: #727882;
+	letter-spacing: 0.2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
